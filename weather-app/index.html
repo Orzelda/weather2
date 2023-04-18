@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="cool as shit weather app thats VERY functional and feature rich">    
+    <link rel="stylesheet" href="style.css" />
+    <title>weather app</title>
+    <link rel="icon" type="image/x-icon" href="/images/weather-icon.ico">
+  </head>
+  <body>
+    <main>
+        <div class="container">
+            <div class="search-box">
+                <!-- <form name="myForm" action="" onsubmit="return validateForm()" method="post" required> -->
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Enter your location" >
+                    <button class="fa-solid fa-magnifying-glass"></button>
+                <!-- </form> -->
+            </div>
+
+            <div class="not-found">
+                <img src="images/404.webp" alt="404 image not found">
+                <p>oops! invalid location</p>
+            </div>
+
+            <div class="weather-box">
+                <img src="" alt="">
+                <p class="temperature"></p>
+                <p class="description"></p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anon"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- 1c3fc507e01787dc6aeabf82a0106e31 -->
