@@ -1,5 +1,4 @@
 import { api_key } from'./keys.js';
-alert(api_key);
 
 const container = document.querySelector(".container");
 const search = document.querySelector(".search-box button");
