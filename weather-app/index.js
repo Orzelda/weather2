@@ -1,3 +1,6 @@
+import { api_key } from'./keys.js';
+alert(api_key);
+
 const container = document.querySelector(".container");
 const search = document.querySelector(".search-box button");
 const weatherBox = document.querySelector(".weather-box");
@@ -6,14 +9,12 @@ const error404 = document.querySelector(".not-found");
 
 search.addEventListener('click', () => {
     
-  const APIKey = '1c3fc507e01787dc6aeabf82a0106e31';
+  const APIKey = api_key;
   const city = document.querySelector('.search-box input').value;
 
   if (city === '') return;
 
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`).then(response => response.json()).then(json => {
-
-  //https://api.openweathermap.org/data/2.5/weather?q=glasgow&units=metric&appid=1c3fc507e01787dc6aeabf82a0106e31
 
 
       if (json.cod === "404") {
